@@ -11,7 +11,7 @@ cloudantService = appEnv.getService("productDB");
 *******************************/
 
 var products = require("./products");
-app.get('/api/v2/products', function(req, res) {
+app.get('/api/v1/products', function(req, res) {
   products.list(req,res);
 });
 var port = process.env.PORT || 9080;
